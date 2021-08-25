@@ -74,7 +74,7 @@ public class EventController {
         eventList.add(Event.builder()
                 .id(1003L)
                 .category("sustainability")
-                .title("Highway Cleanup ")
+                .title("Highway Cleanup")
                 .description("Help pick up trash along the highway.")
                 .location("Highway 50")
                 .date("July 22, 2022")
