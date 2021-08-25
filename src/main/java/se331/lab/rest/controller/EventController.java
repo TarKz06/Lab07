@@ -86,6 +86,17 @@ public class EventController {
                 .petAllowed(false)
                 .organizer("Brody Kill")
                 .build());
+        eventList.add(Event.builder()
+                .id(11111L)
+                .category("snake")
+                .title("Lays")
+                .description("eiei eiei")
+                .location("chiang mai 20")
+                .date("August 20, 2022")
+                .time("11:00")
+                .petAllowed(true)
+                .organizer("tarrrrr")
+                .build());
     }
 
     @GetMapping("events")
