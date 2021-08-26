@@ -62,4 +62,14 @@ public class EventController {
         }
     }
 
+    @GetMapping("oranizers/{id}")
+    public ResponseEntity<?> getOrganizer (@PathVariable("id") Long id) {
+        Organizer output = eventService.getOranizer(id);
+        if (output != null) {
+            return ResponseEntity.ok(output);
+        } else {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, " The given id is not found");
+        }
+    }
+
 }
